@@ -1,0 +1,68 @@
+* {
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+body {
+text-align: center;
+}
+
+nav{
+    display:flex;
+}
+a {
+display:inline;
+}
+
+.quiz {
+    color:blueviolet;
+   text-align: center;
+}
+
+.start-quiz{
+    border:none;
+    color:white;
+   background-color: rgb(197, 163, 228);
+   padding: 12px 35px;
+   transition-duration: 0.6s;
+}
+.start-quiz:hover{
+    background-color: white;
+    color:blueviolet;
+    opacity: 0.5;
+}
+
+/* .start-container{
+
+} */
+
+#question-container{
+display:none;
+}
+
+.button-list{
+display:flex;
+flex-direction: column;
+}
+
+.button{
+    background-color: rgb(197, 163, 228);
+    color: white;
+    border: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 10px 30px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 12px;
+    transition-duration: 0.6s;
+}
+
+.button:hover{
+    background-color: white;
+    color:blueviolet;
+    opacity: 0.5;
+}
+
+ul li{
+list-style-type: none;
+}
