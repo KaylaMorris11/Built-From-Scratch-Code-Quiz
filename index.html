@@ -5,56 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div class="timer"></div>
+<header>
     <nav>
-    <a>View HighScores</a>
+        <a href="#View HighScores">View HighScores</a>
     </nav>
-
-
-    <!-- start quiz -->
-        <p id="quiz-timer">2:00</p>
     
-        <h1 class="quiz">Code Quiz</h1>
+</header>
 
-        <p>This is a quiz to test your coding knowledge!</p>
+<section id="title-page">
+    <h1 class="quiz">Code Quiz</h1>
 
-        <div>
-            <button class="start-quiz" id="quiz-start">Start Quiz</button>
-        </div>
+    <p>This is a quiz to test your coding knowledge!</p>
+</div>
+    <div>
+    
+        <button id="start-quiz" onclick= "startQuiz();setTime();">Start Quiz</button>
+    </section>
 
+
+    <!--Nav bar with a link on the left and the timer on the right-->
     <!-- Start of quiz questions-->
-    <main id="question-container">
-<section class="question1">
-    <h2>Which animal is your favorite?</h2>
+    <!-- Start game button -->
 
-    <ul class="button-list">
-        <button class=button><li>
-            Tigers
-        </li></button>
-        <button class="button"><li>
-            Lion
-        </li></button>
-        <button class="button"><li>
-            Bear
-        </li></button>
-        <button class="button"><li>
-            Sheep
-        </li></ul></button>
-    </ul>
-</section>
+    <!--Submit highscore section-->
+    <!--Question section-->
+    <section id="question1-box">
+        <section id="question1">
+            <h2>Which animal is your favorite?</h2>
+
+            <ul class="answer-list">
+                <button class="answer">
+                    <li>
+                        Tigers
+                    </li>
+                </button>
+                <button class="answer">
+                    <li>
+                        Lion
+                    
+                    </li>
+                </button>
+                <button class="answer">
+                    <li>
+                        Bear
+                    </li>
+                </button>
+                <button class="answer">
+                    <li>
+                        Sheep
+                    </li>
+            </ul></button>
+            </ul>
+        </section>
+        </section>
 
 
-<section class="question2">
-<h2></h2>
+        <!--Question 2-->
+        <section id="question2-box">
+            <div id="question2">
+                <h2>Where is your favorite place to go?</h2>
+                <div class="answer-list">
+                        <div class="answer">
+                            Tokyo
+                        </div>
+                        <div class="answer">
+                            Seattle
+                        </div>
+                        <div class="answer">
+                            France
+                        </div>
+                        <div class="answer">
+                            Boston
+                        </div>
+                </div>
+
+            </div>
+        </section>
 
 
-</section>
-</main>
+
+
+
+
+    </section>
 
     <script src="script.js"></script>
 </body>
