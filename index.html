@@ -10,90 +10,99 @@
 </head>
 
 <body>
-    <div class="timer"></div>
-<header>
-    <nav>
-        <a href="#View HighScores">View HighScores</a>
-    </nav>
-    
-</header>
 
-<section id="title-page">
-    <h1 class="quiz">Code Quiz</h1>
+    <header>
+        <nav>
+            <a href="#View HighScores">View HighScores</a>
+        </nav>
+        <div class="timer"></div>
+    </header>
 
-    <p>This is a quiz to test your coding knowledge!</p>
-</div>
-    <div>
-    
-        <button id="start-quiz" onclick= "startQuiz();setTime();">Start Quiz</button>
+    <section id="title-page">
+        <h1 class="quiz">Code Quiz</h1>
+
+        <p>This is a quiz to test your coding knowledge!</p>
+        </div>
+        <div>
+
+            <button id="start-quiz" onclick="startQuiz();setTime();">Start Quiz</button>
     </section>
-
 
     <!--Nav bar with a link on the left and the timer on the right-->
     <!-- Start of quiz questions-->
     <!-- Start game button -->
-
     <!--Submit highscore section-->
     <!--Question section-->
     <section id="question1-box">
         <section id="question1">
-            <h2>Which animal is your favorite?</h2>
-
-            <ul class="answer-list">
-                <button class="answer">
+            <h2>In which coding language can you edit the box model?</h2>
+            <ul class="answer-list" onclick="questionChoices1()">
+                <button class="answer" id="choice1">
                     <li>
-                        Tigers
+                        Html
                     </li>
                 </button>
-                <button class="answer">
+                <button class="answer" id="choice2">
                     <li>
-                        Lion
-                    
+                    Javascript
                     </li>
                 </button>
-                <button class="answer">
+                <button class="answer" id="choice3">
                     <li>
-                        Bear
+                        C++
                     </li>
                 </button>
-                <button class="answer">
+                <button class="answer" id="choice4">
                     <li>
-                        Sheep
+                        CSS
                     </li>
             </ul></button>
             </ul>
         </section>
-        </section>
-
-
-        <!--Question 2-->
-        <section id="question2-box">
-            <div id="question2">
-                <h2>Where is your favorite place to go?</h2>
-                <div class="answer-list">
-                        <div class="answer">
-                            Tokyo
-                        </div>
-                        <div class="answer">
-                            Seattle
-                        </div>
-                        <div class="answer">
-                            France
-                        </div>
-                        <div class="answer">
-                            Boston
-                        </div>
-                </div>
-
-            </div>
-        </section>
-
-
-
-
-
-
     </section>
+
+    <!--Question 2-->
+    <section id="question2-box">
+        <section id="question2">
+            <h2>What programming language is considered the skeleton of a website?</h2>
+            <ul class="answer-list" onclick="questionChoices2()">
+                <button class="answer">
+                    <li>Javascript</li>
+                </button>
+                <button class="answer">
+                    <li>HTML</li>
+                </button>
+                <button class="answer">
+                    <li>CSS</li>
+                </button>
+                <button class="answer">
+                   <li>Python</li> 
+                </button>
+            </ul>
+        </section>
+    </section>
+
+    <!--Question 3-->
+    <section id="question3-box">
+    <section id="question3">   
+        <h2>How do you get an ID from your HTML and edit it through CSS & Javascript?</h2>
+    <ul class="answer-list" onclick="questionChoices3()">
+        <button class="answer" id="choice1">
+            <li>document.getElementById</li>
+        </button>
+        <button class="answer" id="choice2">
+            <li>document.querySelector</li>
+        </button>
+        <button class="answer" id="choice3">
+            <li>document.SelectID</li>
+        </button>
+        <button class="answer" id="choice4">
+            <li>document.getElementByClass</li>
+        </button>
+    </ul>
+        </section>
+    </section>
+        
 
     <script src="script.js"></script>
 </body>
