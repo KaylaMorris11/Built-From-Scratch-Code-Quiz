@@ -36,28 +36,30 @@
     <section id="question1-box">
         <section id="question1">
             <h2>In which coding language can you edit the box model?</h2>
-            <ul class="answer-list" onclick="questionChoices1()">
-                <button class="answer" id="choice1">
-                    <li>
+            <ul class="answer-list" onclick="questionChoices1(event)">
+                <li>
+                    <button class="answer" id="wrong">
                         Html
-                    </li>
-                </button>
-                <button class="answer" id="choice2">
-                    <li>
-                    Javascript
-                    </li>
-                </button>
-                <button class="answer" id="choice3">
-                    <li>
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="wrong">
+                        Javascript
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="wrong">
                         C++
-                    </li>
-                </button>
-                <button class="answer" id="choice4">
-                    <li>
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="correct">
                         CSS
-                    </li>
-            </ul></button>
+                    </button>
+                </li>
+
             </ul>
+            <p id="displayCorrect"></p>
         </section>
     </section>
 
@@ -65,44 +67,75 @@
     <section id="question2-box">
         <section id="question2">
             <h2>What programming language is considered the skeleton of a website?</h2>
-            <ul class="answer-list" onclick="questionChoices2()">
-                <button class="answer">
-                    <li>Javascript</li>
-                </button>
-                <button class="answer">
-                    <li>HTML</li>
-                </button>
-                <button class="answer">
-                    <li>CSS</li>
-                </button>
-                <button class="answer">
-                   <li>Python</li> 
-                </button>
+            <ul class="answer-list" onclick="questionChoices2(event)">
+                <li>
+                    <button class="answer" id="wrong">
+                        Javascript
+                    </button>
+                </li>
+
+                <li> <button class="answer" id="correct">
+                        HTML
+                    </button>
+                </li>
+
+                <li>
+                    <button class="answer" id="wrong">
+                        CSS
+                    </button>
+
+                </li>
+
+                <li>
+                    <button class="answer" id="wrong">
+                        Python
+                    </button>
+                </li>
+
             </ul>
+
         </section>
     </section>
 
     <!--Question 3-->
     <section id="question3-box">
-    <section id="question3">   
-        <h2>How do you get an ID from your HTML and edit it through CSS & Javascript?</h2>
-    <ul class="answer-list" onclick="questionChoices3()">
-        <button class="answer" id="choice1">
-            <li>document.getElementById</li>
-        </button>
-        <button class="answer" id="choice2">
-            <li>document.querySelector</li>
-        </button>
-        <button class="answer" id="choice3">
-            <li>document.SelectID</li>
-        </button>
-        <button class="answer" id="choice4">
-            <li>document.getElementByClass</li>
-        </button>
-    </ul>
+        <section id="question3">
+            <h2>How do you get an ID from your HTML and edit it through CSS & Javascript?</h2>
+            <ul class="answer-list" onclick="questionChoices3(event)">
+                <li>
+                    <button class="answer" id="correct">
+                        document.getElementById
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="wrong">
+                        document.querySelector
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="wrong">
+                        document.SelectID
+                    </button>
+                </li>
+                <li>
+                    <button class="answer" id="wrong">
+                        document.getElementByClass
+                    </button>
+                </li>
+            </ul>
         </section>
     </section>
-        
+
+    <section id="displayScore">
+        <form onsubmit="replayQuiz(event)">
+            <h2 id="userScore"></h2>
+            <label for="fname"></label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <input type="submit" value="Submit">
+            <!-- <button onclick="replayQuiz()">Replay</button> -->
+        </form>
+
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -117,3 +117,11 @@ margin: 0 20px 0 20px;
     background-color: white;
     display: none;
 }
+
+#displayScore{
+    display: none;
+}
+
+#fname {
+margin-bottom: 40px;
+}
