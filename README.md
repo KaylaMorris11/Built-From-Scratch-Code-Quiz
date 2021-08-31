@@ -1,4 +1,5 @@
 A quiz to test your coding knowledge.
+Technoligies used: HTML, CSS, JAVASCRIPT
 
 Deployed Application: https://kaylamorris11.github.io/Code-Quiz/
 
