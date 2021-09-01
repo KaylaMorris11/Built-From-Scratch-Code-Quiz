@@ -1,4 +1,5 @@
-A quiz to test your coding knowledge.
+This is a quiz to test your coding knowledge. Try to get the highest score by answering all of the questions correctly the fastest!
+
 Technoligies used: HTML, CSS, JAVASCRIPT
 
 Deployed Application: https://kaylamorris11.github.io/Code-Quiz/
