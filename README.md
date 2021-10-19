@@ -2,7 +2,7 @@
 This is a quiz to test your coding knowledge. Try to get the highest score by answering all of the questions correctly the fastest!
 
 # Deployed Application: 
-https://kaylamorris11.github.io/Code-Quiz/
+https://kaylamorris11.github.io/short-tech-quiz/
 
 # Technoligies used: 
 HTML, CSS, JAVASCRIPT
